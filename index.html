@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Duarte - Servicios Contables</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="imagenes/firma.png" alt="Natalia Duarte - Servicios Contables" class="logo-img" >
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio" class="active">INICIO</a></li>
+                    <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero-section">
+    
+    <img src="imagenes/Inicio.png" alt="Fondo Natalia Duarte" class="hero-bg-full">
+    
+    <div class="container hero-container">
+        <div class="hero-text">
+            <p class="subtitle">GESTIÓN CONTABLE E IMPOSITIVA</p>
+            <h1>Soluciones contables<br>para vos y tu negocio</h1>
+            <p class="description">Te ayudo a simplificar tus obligaciones impositivas para que puedas enfocarte en hacer crecer tu proyecto.</p>
+            <a href="https://wa.me/541169597172" target="_blank" class="btn-whatsapp">
+    <i class="fab fa-whatsapp"></i> HABLEMOS POR WHATSAPP
+</a>
+        </div>
+    </div>
+</section>
+
+</section>
+
+    <section id="sobre-mi" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <p class="subtitle">SOBRE MÍ</p>
+                <h2>Hola, soy Natalia</h2>
+                <div class="divider"></div>
+                <p>Soy estudiante avanzada de Contador Público, próxima a recibirme.</p>
+                <p>Brindo asesoramiento contable e impositivo con atención personalizada, clara y cercana.</p>
+                <p>Mi objetivo es acompañarte y ayudarte a tomar decisiones con tranquilidad y orden.</p>
+                <div class="signature">
+                    <img src="imagenes/firma.png" alt="Firma Natalia Duarte" class="signature-img">
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="imagenes/cafe.png" alt="Natalia Duarte - Agenda y Café">
+            </div>
+        </div>
+    </section>
+
+<!-- ==========================================
+     SECCIÓN NOVEDADES / NOTICIAS
+     ========================================== -->
+
+<section id="noticias" class="news-section">
+    <div class="container">
+        <h2 class="news-title">Actualidad & Novedades</h2>
+        <p class="news-subtitle">Información clave y actualizaciones del mundo impositivo para mantener tu actividad al día.</p>
+        
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-card-content">
+                    <span class="news-tag">Monotributo</span>
+                    <h3>Nuevas Escalas y Vencimientos</h3>
+                    <p>Repasamos los nuevos topes de facturación y las fechas clave para realizar la recategorización sin sorpresas.</p>
+                    <button class="news-btn" onclick="document.getElementById('modal-mono').showModal()">Leer más <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-card-content">
+                    <span class="news-tag">Autónomos</span>
+                    <h3>Claves de la Próxima Moratoria</h3>
+                    <p>Todo lo que necesitás saber sobre los planes de pago vigentes para regularizar deudas previsionales de forma simple.</p>
+                    <button class="news-btn" onclick="document.getElementById('modal-mora').showModal()">Leer más <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-card-content">
+                    <span class="news-tag">Calendario</span>
+                    <h3>Vencimientos AFIP del Mes</h3>
+                    <p>Agendá las fechas de presentación de declaraciones juradas para evitar multas y mantener el orden de tu negocio.</p>
+                    <a href="https://www.afip.gob.ar/vencimientos/" target="_blank" class="news-btn-link">
+                        Ir al cronograma oficial <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="modal-mono" class="news-modal">
+        <div class="modal-header">
+            <span class="news-tag">Monotributo</span>
+            <button class="close-btn" onclick="document.getElementById('modal-mono').close()">&times;</button>
+        </div>
+        <h2>Escalas y Valores Monotributo 2026</h2>
+        <p class="modal-date">Cuadro Completo Oficial ARCA</p>
+        <div class="modal-body">
+            <img src="Novedades/escalas-2026.png" alt="Tabla Completa Monotributo 2026" class="modal-img">
+            <p><strong>¿Necesitás evaluar tu recategorización?</strong> Coordiná una asesoría personalizada conmigo para asegurar el encuadre correcto de tu actividad.</p>
+        </div>
+    </dialog>
+
+    <dialog id="modal-mora" class="news-modal">
+        <div class="modal-header">
+            <span class="news-tag">Autónomos</span>
+            <button class="close-btn" onclick="document.getElementById('modal-mora').close()">&times;</button>
+        </div>
+        <h2>Claves de la Próxima Moratoria</h2>
+        <p class="modal-date">Actualizado 2026</p>
+        <div class="modal-body">
+            <p>Nuevos planes de facilidades vigentes para regularizar deudas previsionales e impositivas de forma simple.</p>
+            <div style="text-align: center; margin: 25px 0;">
+                <a href="documentos/valores.pdf" target="_blank" class="pdf-btn">
+                    <i class="fas fa-file-pdf"></i> Ver PDF Informativo Completo
+                </a>
+            </div>
+            <p>Si tenés dudas sobre cómo adherirte o querés calcular las cuotas, no dudes en consultarme.</p>
+        </div>
+    </dialog>
+</section>
+
+
+
+
+    <section id="servicios" class="services-section">
+        <div class="container">
+            <p class="subtitle-center">SERVICIOS</p>
+            <div class="divider-center"></div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-container">
+                        <img src="imagenes/Hoja.png" alt="Monotributo">
+                    </div>
+                    <h3>Monotributo</h3>
+                    <ul>
+                        <li>Altas</li>
+                        <li>Bajas</li>
+                        <li>Recategorizaciones</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-container">
+                        <img src="imagenes/Calculadora.png" alt="Impuestos">
+                    </div>
+                    <h3>Impuestos</h3>
+                    <ul>
+                        <li>IVA</li>
+                        <li>Ingresos Brutos</li>
+                        <li>Presentaciones</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-container">
+                        <img src="imagenes/personas.png" alt="Sueldos">
+                    </div>
+                    <h3>Sueldos</h3>
+                    <ul>
+                        <li>Liquidaciones</li>
+                        <li>Altas y bajas de empleados</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-container">
+                        <img src="imagenes/grafico.png" alt="Emprendedores">
+                    </div>
+                    <h3>Emprendedores</h3>
+                    <ul>
+                        <li>Organización administrativa</li>
+                        <li>Facturación electrónica</li>
+                        <li>Asesoramiento inicial</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-container">
+                        <img src="imagenes/calendario.png" alt="Vencimientos">
+                    </div>
+                    <h3>Vencimientos</h3>
+                    <p class="card-text">Te recuerdo tus vencimientos para que no tengas multas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Tenés dudas o necesitás asesoramiento?</h2>
+            <p>Estoy para ayudarte.</p>
+            <a href="https://wa.me/541163597172" target="_blank" class="btn-whatsapp-outline">
+                <i class="fab fa-whatsapp"></i> ESCRIBIME POR WHATSAPP
+            </a>
+        </div>
+    </section>
+
+    <footer  id="contacto" class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="imagenes/1LogoB-N.png" alt="Natalia Duarte" class="footer-logo">
+            </div>
+            
+            <div class="footer-links">
+                <h4>ENLACES</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <section id="contacto"></section>
+                <h4>CONTACTO</h4>
+                <ul>
+                    <li><i class="fab fa-whatsapp"></i> 11 6359 7172</li>
+                    <li><i class="far fa-envelope"></i> nataliabelenduarte@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Quilmes Oeste, Buenos Aires</li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>SEGUIME</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/natalia-bel%C3%A9n-duarte-4562a738a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Natalia Duarte - Servicios Contables. Todos los derechos reservados.</p>
+                <p>Diseñado con <span class="heart">♥</span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
